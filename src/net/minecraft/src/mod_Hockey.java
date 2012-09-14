@@ -21,13 +21,13 @@ public class mod_Hockey extends BaseMod {
 	
 	public mod_Hockey()
 	{
-	    ModLoader.registerBlock(shit);
-	    ModLoader.addName(shit, "Super-crazy-awesome-cool SHIT");
-	    
-	    hockeyStick.iconIndex = ModLoader.addOverride("/gui/items.png", "/hockeymod/hockeyStick.png");
-	    puck.iconIndex = ModLoader.addOverride("/gui/items.png", "/hockeymod/puck.png");
-	    ModLoader.addName(hockeyStick, "Wooden Hockey Stick");
-     	ModLoader.addName(puck, "Hockey Puck");
+		ModLoader.registerBlock(shit);
+		ModLoader.addName(shit, "Super-crazy-awesome-cool SHIT");
+			    
+		hockeyStick.iconIndex = ModLoader.addOverride("/gui/items.png", "/hockeymod/hockeyStick.png");
+		puck.iconIndex = ModLoader.addOverride("/gui/items.png", "/hockeymod/puck.png");
+		ModLoader.addName(hockeyStick, "Wooden Hockey Stick");
+		ModLoader.addName(puck, "Hockey Puck");
 
 	}
 
