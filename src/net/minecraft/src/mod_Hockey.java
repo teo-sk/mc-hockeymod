@@ -28,6 +28,8 @@ public class mod_Hockey extends BaseMod {
 		puck.iconIndex = ModLoader.addOverride("/gui/items.png", "/hockeymod/puck.png");
 		ModLoader.addName(hockeyStick, "Wooden Hockey Stick");
 		ModLoader.addName(puck, "Hockey Puck");
+		
+		ModLoader.addRecipe(new ItemStack(hockeyStick, 1), new Object[] {"  #", " #X", "#  ", '#', Item.stick, 'X', Block.planks});
 
 	}
 
