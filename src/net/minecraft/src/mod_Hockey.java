@@ -4,8 +4,9 @@ public class mod_Hockey extends BaseMod {
 
 	public static final Block shit = new BlockShit(200,0).setBlockName("shit");
 	
-	public static final Item hockeyStick = new Item(2000).setItemName("hockeyStick");
-	public static final Item puck = new Item(2001).setItemName("puck");
+	public static final Item woodenHockeyStick = new Item(2000).setItemName("woodenHockeyStick");
+	public static final Item ironHockeyStick = new Item(2001).setItemName("ironHockeyStick");
+	public static final Item puck = new Item(2002).setItemName("puck");
 	
 	@Override
 	public String getVersion() {
@@ -24,12 +25,15 @@ public class mod_Hockey extends BaseMod {
 		ModLoader.registerBlock(shit);
 		ModLoader.addName(shit, "Super-crazy-awesome-cool SHIT");
 			    
-		hockeyStick.iconIndex = ModLoader.addOverride("/gui/items.png", "/hockeymod/hockeyStick.png");
+		woodenHockeyStick.iconIndex = ModLoader.addOverride("/gui/items.png", "/hockeymod/woodenHockeyStick.png");
+		ironHockeyStick.iconIndex = ModLoader.addOverride("/gui/items.png", "/hockeymod/ironHockeyStick.png");
 		puck.iconIndex = ModLoader.addOverride("/gui/items.png", "/hockeymod/puck.png");
-		ModLoader.addName(hockeyStick, "Wooden Hockey Stick");
+		ModLoader.addName(woodenHockeyStick, "Wooden Hockey Stick");
+		ModLoader.addName(ironHockeyStick, "Iron Hockey Stick");
 		ModLoader.addName(puck, "Hockey Puck");
 		
-		ModLoader.addRecipe(new ItemStack(hockeyStick, 1), new Object[] {"  #", " #X", "#  ", '#', Item.stick, 'X', Block.planks});
+		ModLoader.addRecipe(new ItemStack(woodenHockeyStick, 1), new Object[] {"  #", " #X", "#  ", '#', Item.stick, 'X', Block.planks});
+		ModLoader.addRecipe(new ItemStack(ironHockeyStick, 1), new Object[] {"  #", " #X", "#  ", '#', Item.stick, 'X', Item.ingotIron});
 
 	}
 
