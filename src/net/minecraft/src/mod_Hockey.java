@@ -19,7 +19,7 @@ public class mod_Hockey extends BaseMod {
 	}
 	
 	public mod_Hockey()
-	{			    
+	{
 		woodenHockeyStick.iconIndex = ModLoader.addOverride("/gui/items.png", "/hockeymod/woodenHockeyStick.png");
 		ironHockeyStick.iconIndex = ModLoader.addOverride("/gui/items.png", "/hockeymod/ironHockeyStick.png");
 		puck.iconIndex = ModLoader.addOverride("/gui/items.png", "/hockeymod/puck.png");
@@ -29,7 +29,7 @@ public class mod_Hockey extends BaseMod {
 		
 		ModLoader.addRecipe(new ItemStack(woodenHockeyStick, 1), new Object[] {"  #", " #X", "#  ", '#', Item.stick, 'X', Block.planks});
 		ModLoader.addRecipe(new ItemStack(ironHockeyStick, 1), new Object[] {"  #", " #X", "#  ", '#', Item.stick, 'X', Item.ingotIron});
-
+		ModLoader.addRecipe(new ItemStack(puck, 10), new Object[] {" # ", "#X#", " # ", '#', Item.slimeBall, 'X', Block.obsidian});
 	}
 
 }
