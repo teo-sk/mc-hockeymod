@@ -6,7 +6,7 @@ Mod to Minecraft that adds Hockey to the game.
 Current version: 0.1
 --
 
-This mod is in early development phase, so this reporitory is only for contributing, not playing the mod.
+This mod is in early development phase, so this repository is only for contributing, not playing the mod.
 You will need Minecraft Coder Pack and ModLoader in order to get this work.
 
 **Current progress:** Adding basic items and recipes
