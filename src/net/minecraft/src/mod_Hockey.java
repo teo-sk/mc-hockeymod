@@ -1,8 +1,6 @@
 package net.minecraft.src;
 
 public class mod_Hockey extends BaseMod {
-
-	public static final Block shit = new BlockShit(200,0).setBlockName("shit");
 	
 	public static final Item woodenHockeyStick = new Item(2000).setItemName("woodenHockeyStick");
 	public static final Item ironHockeyStick = new Item(2001).setItemName("ironHockeyStick");
@@ -21,10 +19,7 @@ public class mod_Hockey extends BaseMod {
 	}
 	
 	public mod_Hockey()
-	{
-		ModLoader.registerBlock(shit);
-		ModLoader.addName(shit, "Super-crazy-awesome-cool SHIT");
-			    
+	{			    
 		woodenHockeyStick.iconIndex = ModLoader.addOverride("/gui/items.png", "/hockeymod/woodenHockeyStick.png");
 		ironHockeyStick.iconIndex = ModLoader.addOverride("/gui/items.png", "/hockeymod/ironHockeyStick.png");
 		puck.iconIndex = ModLoader.addOverride("/gui/items.png", "/hockeymod/puck.png");
